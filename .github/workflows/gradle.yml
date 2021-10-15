@@ -27,6 +27,9 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: gradle
+        server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+        settings-path: ${{ github.workspace }} # location for the settings.xml file
+    
         
     - name: Build with Gradle
       working-directory: ./backendwebsiteservice
