@@ -36,5 +36,5 @@ jobs:
     - name: Test with Gradle
       working-directory: ./backendwebsiteservice
       run: gradle test
-      
+           spring.profiles.active=production
 
