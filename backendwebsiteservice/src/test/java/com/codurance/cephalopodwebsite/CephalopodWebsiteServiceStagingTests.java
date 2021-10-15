@@ -12,7 +12,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @WebMvcTest(CephalopodWebsiteService.class)
-@ActiveProfiles("production")
 public class CephalopodWebsiteServiceStagingTests {
     @Autowired
     private MockMvc mockMvc;
