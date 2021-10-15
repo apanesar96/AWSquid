@@ -17,8 +17,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-    env: 
-      spring.profiles.active: staging
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 11
@@ -35,6 +33,5 @@ jobs:
       run: gradle build
     - name: Test with Gradle
       working-directory: ./backendwebsiteservice
-      run: gradle test
-           spring.profiles.active=production
+      run: SPRING_PROFILES_ACTIVE=staging gradle test
 
