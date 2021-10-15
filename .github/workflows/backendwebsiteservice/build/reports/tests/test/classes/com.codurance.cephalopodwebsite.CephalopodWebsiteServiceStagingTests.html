@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CephalopodWebsiteServiceStagingTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CephalopodWebsiteServiceStagingTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.codurance.cephalopodwebsite.html">com.codurance.cephalopodwebsite</a> &gt; CephalopodWebsiteServiceStagingTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.040s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getSquidReturns200ResponseForNormalSquid()</td>
+<td class="success">0.040s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-10-15 10:18:14.705  INFO 1322 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.codurance.cephalopodwebsite.CephalopodWebsiteServiceStagingTests], using SpringBootContextLoader
+2021-10-15 10:18:14.709  INFO 1322 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.codurance.cephalopodwebsite.CephalopodWebsiteServiceStagingTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-10-15 10:18:14.710  INFO 1322 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.codurance.cephalopodwebsite.CephalopodWebsiteServiceStagingTests]: CephalopodWebsiteServiceStagingTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-10-15 10:18:14.717  INFO 1322 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.codurance.cephalopodwebsite.CephalopodWebsiteApplication for test class com.codurance.cephalopodwebsite.CephalopodWebsiteServiceStagingTests
+2021-10-15 10:18:14.719  INFO 1322 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-10-15 10:18:14.721  INFO 1322 --- [    Test worker] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3c16528d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2e45a357, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@389a5022, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@bb8ead8, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5b44318, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e807e2, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6c995c5d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@203b953c, org.springframework.test.context.event.EventPublishingTestExecutionListener@730bea0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@41a16eb3, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@677cb96e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b1252c8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@19d53ab4, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@53cb0bcb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@51fe7f15]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.5)
+
+2021-10-15 10:18:19.781  INFO 1322 --- [    Test worker] c.c.CephalopodWebsiteServiceStagingTests : Starting CephalopodWebsiteServiceStagingTests using Java 16.0.2 on Codurances-MacBook-Pro.local with PID 1322 (started by codurance in /Users/codurance/Documents/Cephalopod-Website/backendwebsiteservice)
+2021-10-15 10:18:19.782  INFO 1322 --- [    Test worker] c.c.CephalopodWebsiteServiceStagingTests : The following profiles are active: production
+2021-10-15 10:18:22.360  INFO 1322 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-10-15 10:18:22.376  INFO 1322 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-10-15 10:18:22.382  INFO 1322 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-10-15 10:18:22.490  INFO 1322 --- [    Test worker] c.c.CephalopodWebsiteServiceStagingTests : Started CephalopodWebsiteServiceStagingTests in 7.763 seconds (JVM running for 20.792)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at 15 Oct 2021, 10:18:22</p>
+</div>
+</div>
+</body>
+</html>
