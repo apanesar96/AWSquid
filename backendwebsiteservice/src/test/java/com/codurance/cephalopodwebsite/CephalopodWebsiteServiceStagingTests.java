@@ -11,15 +11,16 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@WebMvcTest(CephalopodWebsiteService.class)
-public class CephalopodWebsiteServiceStagingTests {
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Test
-    void getSquidReturns200ResponseForNormalSquid() throws Exception {
-        this.mockMvc.perform(get("/getSquid"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("http://localhost:3002/normalSquid"));
-    }
-}
+//@WebMvcTest(CephalopodWebsiteService.class)
+//@ActiveProfiles("staging")
+//public class CephalopodWebsiteServiceStagingTests {
+//    @Autowired
+//    private MockMvc mockMvc;
+//
+//    @Test
+//    void getSquidReturns200ResponseForNormalSquid() throws Exception {
+//        this.mockMvc.perform(get("/getSquid"))
+//                .andExpect(status().isOk())
+//                .andExpect(content().string("http://localhost:3002/normalSquid"));
+//    }
+//}
