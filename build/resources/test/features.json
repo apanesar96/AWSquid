@@ -1,0 +1,11 @@
+{
+  "development": {
+    "seasonalSquid": true
+  },
+  "staging": {
+    "seasonalSquid": true
+  },
+  "production": {
+    "seasonalSquid": false
+  }
+}
