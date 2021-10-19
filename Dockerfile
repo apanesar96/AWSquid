@@ -1,6 +1,3 @@
-FROM gradle:7.2.0-jdk8
-RUN gradle clean build
-
 FROM adoptopenjdk:11-jre-hotspot as builder
 
 ARG JAR_FILE=build/libs/cephalopodwebsite-*.jar
