@@ -20,6 +20,6 @@ WORKDIR /usr/app
 #COPY --chown=1001 --from=builder spring-boot-loader/ /deployments/
 #COPY --chown=1001 --from=builder application/ /deployments/
 
-ENTRYPOINT ["java", "-jar", "/usr/app.jar"]
+ENTRYPOINT ["java", "-jar", "cephalopodwebsite-SNAPSHOT.jar"]
 EXPOSE 8080
 USER 1001
