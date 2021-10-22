@@ -1,8 +1,12 @@
 FROM adoptopenjdk:11-jre-hotspot as builder
 
-ARG JAR_FILE=build/libs/cephalopodwebsite-*.jar
-COPY ${JAR_FILE} app.jar
-RUN java -Djarmode=layertools -jar app.jar extract
+# ARG JAR_FILE=build/libs/cephalopodwebsite-*.jar
+# COPY ${JAR_FILE} app.jar
+# RUN java -Djarmode=layertools -jar app.jar extract
+
+COPY ./build/libs/cephalopodwebsite-*.jar /usr/app/
+
+WORKDIR /usr/app
 #
 #FROM adoptopenjdk:11-jre-hotspot
 #
